@@ -253,11 +253,12 @@ export class CubismFramework {
    * 静的クラスとして使用する
    * インスタンス化させない
    */
-  private constructor() {}
+  private constructor() { }
 }
 
 export class Option {
-  logFunction: Live2DCubismCore.csmLogFunction; // ログ出力の関数オブジェクト
+  // @ts-ignore
+  private logFunction: Live2DCubismCore.csmLogFunction; // ログ出力の関数オブジェクト
   loggingLevel: LogLevel; // ログ出力レベルの設定
 }
 

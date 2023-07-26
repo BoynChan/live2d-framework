@@ -1,0 +1,1 @@
+{"version":3,"file":"cubismjsonextension.d.ts","sourceRoot":"","sources":["../../src/utils/cubismjsonextension.ts"],"names":[],"mappings":"AACA;;;;;GAKG;AAEH,OAAO,EAAE,SAAS,EAA0B,OAAO,EAA6B,KAAK,EAAE,MAAM,cAAc,CAAC;AAE5G;;;;;GAKG;AACH,qBAAa,mBAAmB;IAC9B,MAAM,CAAC,eAAe,CAAC,GAAG,EAAE,KAAK,EAAE,GAAG,EAAE,OAAO;IAyB/C,SAAS,CAAC,MAAM,CAAC,cAAc,CAAC,GAAG,EAAE,KAAK;CAwC3C"}

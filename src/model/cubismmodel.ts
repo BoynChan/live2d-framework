@@ -523,7 +523,8 @@ export class CubismModel {
   /**
    * モデルを取得
    */
-  public getModel(): Live2DCubismCore.Model {
+  // @ts-ignore
+  public getModel(): any {
     return this._model;
   }
 
@@ -686,7 +687,8 @@ export class CubismModel {
    * @return csmParameterType_Normal -> 通常のパラメータ
    *          csmParameterType_BlendShape -> ブレンドシェイプパラメータ
    */
-  public getParameterType(parameterIndex: number): Live2DCubismCore.csmParameterType {
+  // @ts-ignore
+  public getParameterType(parameterIndex: number): any {
     return this._model.parameters.types[parameterIndex];
   }
 
@@ -774,7 +776,7 @@ export class CubismModel {
       weight == 1
         ? value
         : (this._parameterValues[parameterIndex] =
-            this._parameterValues[parameterIndex] * (1 - weight) + value * weight);
+          this._parameterValues[parameterIndex] * (1 - weight) + value * weight);
   }
 
   /**
@@ -1037,8 +1039,8 @@ export class CubismModel {
     return Live2DCubismCore.Utils.hasBlendAdditiveBit(constantFlags[drawableIndex])
       ? CubismBlendMode.CubismBlendMode_Additive
       : Live2DCubismCore.Utils.hasBlendMultiplicativeBit(constantFlags[drawableIndex])
-      ? CubismBlendMode.CubismBlendMode_Multiplicative
-      : CubismBlendMode.CubismBlendMode_Normal;
+        ? CubismBlendMode.CubismBlendMode_Multiplicative
+        : CubismBlendMode.CubismBlendMode_Normal;
   }
 
   /**
@@ -1266,7 +1268,8 @@ export class CubismModel {
    * コンストラクタ
    * @param model モデル
    */
-  public constructor(model: Live2DCubismCore.Model) {
+  // @ts-ignore
+  public constructor(model: any) {
     this._model = model;
     this._parameterValues = null;
     this._parameterMaximumValues = null;

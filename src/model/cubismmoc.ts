@@ -125,7 +125,8 @@ export class CubismMoc {
     return isConsistent === 1 ? true : false;
   }
 
-  _moc: Live2DCubismCore.Moc; // Mocデータ
+  // @ts-ignore
+  private _moc: Live2DCubismCore.Moc; // Mocデータ
   _modelCount: number; // Mocデータから作られたモデルの個数
   _mocVersion: number; // 読み込んだモデルの.moc3 Version
 }
